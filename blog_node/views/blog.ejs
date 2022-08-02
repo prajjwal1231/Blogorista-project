@@ -1,0 +1,20 @@
+<%- include('./partition/header.ejs') %>
+<section class="blog-list mtb-40">
+    <div class="container">
+      <div class="row">
+        <% var i=1 %>
+                                <% data.forEach((item)=>{ %>
+        <div class="col-md-4">
+          <div class="blog-box">
+            <img src="../upload/<%= item.image %>" alt="blog1" />
+            <h3> <%= item.title %></h3>
+            <p>by <span><%= item.created_by %></span> on <span><%= item.createdAt %></span></p>
+            <p><%= item.description %> </p>
+            <a href="/blog_details/<%= item._id %>" class="btn btn-danger">Read more...</a>
+          </div>
+        </div>
+        <%})%>
+      </div>
+    </div>
+  </section>
+  <%- include('./partition/footer.ejs') %>

@@ -1,0 +1,19 @@
+<%- include('../partition/header.ejs') %>
+<section class="blog-detail mtb-40">
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <p>Details</p>
+                </div>
+            <div class="card-body">
+                <p><b>Name:</b> <%=data.name%></p>
+                    <p><b>Email:</b> <%=data.email%></p>
+                        <p><b>phone:</b> <%=data.phone%></p>
+                    <p><b>Message:</b></p><p><%=data.message%></p>
+                    <p></p>
+            </div>
+        </div>
+        <a class="btn btn-primary" href = "/contact/display">Go Back</a>
+    </div>
+</section>
+<%- include('../partition/footer.ejs') %>

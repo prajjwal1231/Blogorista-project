@@ -1,0 +1,22 @@
+<%- include('../partition/header.ejs') %>
+<section class="blog-detail mtb-40">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="blog-left">
+                    <h1><%= data.title %></h1>
+                    <div class="posted-on">
+                        <p>by <span><%= data.created_by %></span> on <span>October 22, 2018</span></p>
+                    </div>
+                    <div class="detail-img">
+                       <img src="/upload/<%= data.image %>" alt="blog" />
+                    </div>
+                    <div class="blog-desc">
+                        <p><%= data.description %> </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<%- include('../partition/footer.ejs') %>
